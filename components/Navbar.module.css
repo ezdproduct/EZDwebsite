@@ -63,24 +63,48 @@
     color: var(--primary);
 }
 
+.mobileActions {
+    display: none;
+}
+
 @media (max-width: 768px) {
     .navbar {
         top: 3rem;
-        padding: 0 0.5rem;
+        padding: 0 0.8rem;
     }
 
     .container {
-        padding: 0.6rem 1.2rem;
+        padding: 0.5rem 1rem;
         background: rgba(255, 255, 255, 0.8) !important;
         backdrop-filter: blur(20px);
-        border: 1px solid rgba(37, 99, 235, 0.1);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        justify-content: space-between;
     }
 
     .logo {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .links {
         display: none;
+    }
+
+    .mobileActions {
+        display: flex;
+        gap: 0.5rem;
+        margin-left: auto;
+    }
+
+    .actionBtn {
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--foreground);
+        opacity: 0.8;
     }
 }

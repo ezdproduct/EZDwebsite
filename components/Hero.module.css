@@ -110,7 +110,8 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 140px 1.2rem 80px;
+        padding: 100px 1.2rem 40px;
+        min-height: auto;
         align-items: flex-start;
         text-align: left;
         position: relative;
@@ -134,44 +135,50 @@
     }
 
     .title {
-        font-size: 2.8rem;
-        line-height: 1.05;
-        margin-bottom: 1.2rem;
+        font-size: 2.6rem;
+        line-height: 1;
+        margin-bottom: 1.5rem;
         letter-spacing: -1.5px;
-        font-weight: 800;
+        font-weight: 900;
     }
 
     .description {
-        font-size: 1rem;
-        line-height: 1.4;
+        font-size: 0.95rem;
+        line-height: 1.5;
         margin-bottom: 2.5rem;
         text-align: left;
         color: #4b5563;
-        opacity: 0.85;
-        padding-right: 0;
+        opacity: 0.9;
         max-width: 100%;
+        background: rgba(37, 99, 235, 0.03);
+        padding: 1rem;
+        border-radius: 12px;
+        border: 1px solid rgba(37, 99, 235, 0.05);
     }
 
     .buttons {
         flex-direction: row;
-        gap: 0.6rem;
+        gap: 0.8rem;
         width: 100%;
-        justify-content: flex-start;
+        padding-bottom: 20px;
     }
 
     .primaryBtn {
-        flex: 1.2;
-        padding: 1rem 0.5rem;
-        font-size: 0.9rem;
-        border-radius: 16px;
-        box-shadow: 0 10px 25px rgba(37, 99, 235, 0.15);
+        flex: 1;
+        border-radius: 14px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .secondaryBtn {
         flex: 1;
-        padding: 1rem 0.5rem;
-        font-size: 0.9rem;
-        border-radius: 16px;
+        border-radius: 14px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
     }

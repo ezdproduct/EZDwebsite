@@ -4,6 +4,7 @@ import { useState } from "react";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import BottomNav from "@/components/BottomNav";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       {showTopBar && <TopBar onClose={() => setShowTopBar(false)} />}
       <Navbar hasTopBar={showTopBar} />
       <Hero />
+      <BottomNav />
 
       <section id="features" className={styles.features}>
         <div className={styles.container}>
