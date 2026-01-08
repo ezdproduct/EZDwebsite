@@ -1,68 +1,80 @@
 .navbar {
     position: fixed;
-    top: 0;
+    top: 1.5rem;
     left: 0;
     right: 0;
-    height: 80px;
     z-index: 1000;
-    transition: all 0.3s ease;
     display: flex;
-    align-items: center;
-}
-
-.scrolled {
-    height: 64px;
-    background: rgba(5, 5, 5, 0.8) !important;
+    justify-content: center;
+    padding: 0 1rem;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0.8rem 2rem;
+    border-radius: 100px;
 }
 
-.logo a {
-    font-size: 1.5rem;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
     font-weight: 700;
-    letter-spacing: -1px;
+    font-size: 1.2rem;
+    color: var(--primary);
 }
 
-.logo span {
-    color: var(--primary);
+.iconCircle {
+    width: 36px;
+    height: 36px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
     display: flex;
-    gap: 2.5rem;
-    align-items: center;
+    gap: 2rem;
 }
 
 .links a {
-    font-size: 0.95rem;
-    font-weight: 400;
-    opacity: 0.8;
-    transition: opacity 0.2s;
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.7;
+    transition: all 0.2s;
+    color: var(--foreground);
 }
 
 .links a:hover {
     opacity: 1;
+    color: var(--primary);
 }
 
-.cta {
-    background: var(--primary);
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
-    opacity: 1 !important;
-    font-weight: 600 !important;
-    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.3);
-    transition: all 0.3s ease !important;
-}
+@media (max-width: 768px) {
+    .navbar {
+        top: 1rem;
+        padding: 0 0.5rem;
+    }
 
-.cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.5);
+    .container {
+        padding: 0.6rem 1.2rem;
+        background: rgba(255, 255, 255, 0.8) !important;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(37, 99, 235, 0.1);
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .links {
+        display: none;
+    }
 }

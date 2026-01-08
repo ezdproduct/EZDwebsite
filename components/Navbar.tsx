@@ -1,30 +1,21 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
-    const [scrolled, setScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setScrolled(window.scrollY > 20);
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
     return (
-        <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""} glass`}>
-            <div className={styles.container}>
+        <nav className={styles.navbar}>
+            <div className={`${styles.container} glass`}>
                 <div className={styles.logo}>
-                    <Link href="/">EZD<span>.</span></Link>
+                    <Link href="/">EZD.vn</Link>
                 </div>
                 <div className={styles.links}>
-                    <Link href="#features">Tính năng</Link>
-                    <Link href="#about">Về chúng tôi</Link>
-                    <Link href="#contact" className={styles.cta}>Bắt đầu ngay</Link>
+                    <Link href="#">Giới thiệu</Link>
+                    <Link href="#">Sản phẩm</Link>
+                    <Link href="#">Dịch vụ</Link>
+                    <Link href="#">Câu chuyện</Link>
+                    <Link href="#">Liên hệ</Link>
                 </div>
             </div>
         </nav>
