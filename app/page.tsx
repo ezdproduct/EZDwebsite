@@ -1,11 +1,18 @@
+"use client";
+
+import { useState } from "react";
+import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import styles from "./page.module.css";
 
 export default function Home() {
+  const [showTopBar, setShowTopBar] = useState(true);
+
   return (
     <main className={styles.main}>
-      <Navbar />
+      {showTopBar && <TopBar onClose={() => setShowTopBar(false)} />}
+      <Navbar hasTopBar={showTopBar} />
       <Hero />
 
       <section id="features" className={styles.features}>

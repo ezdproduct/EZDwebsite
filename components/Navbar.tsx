@@ -1,11 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import styles from "./Navbar.module.css";
 
-export default function Navbar() {
+interface NavbarProps {
+    hasTopBar?: boolean;
+}
+
+export default function Navbar({ hasTopBar = true }: NavbarProps) {
     return (
-        <nav className={styles.navbar}>
+        <nav className={`${styles.navbar} ${!hasTopBar ? styles.noTopBar : ""}`}>
             <div className={`${styles.container} glass`}>
                 <div className={styles.logo}>
                     <Link href="/">EZD.vn</Link>

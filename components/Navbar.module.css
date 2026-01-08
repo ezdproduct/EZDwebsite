@@ -1,12 +1,18 @@
 .navbar {
     position: fixed;
-    top: 1.5rem;
+    top: 3.5rem;
+    /* Adjusted for TopBar height */
     left: 0;
     right: 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
     padding: 0 1rem;
+    transition: top 0.3s ease;
+}
+
+.noTopBar {
+    top: 1.5rem !important;
 }
 
 .container {
@@ -59,7 +65,7 @@
 
 @media (max-width: 768px) {
     .navbar {
-        top: 1rem;
+        top: 3rem;
         padding: 0 0.5rem;
     }
 
