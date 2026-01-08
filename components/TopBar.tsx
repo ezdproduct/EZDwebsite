@@ -11,7 +11,11 @@ export default function TopBar({ onClose }: TopBarProps) {
         <div className={styles.topBar}>
             <div className={styles.container}>
                 <span className={styles.tag}>ƯU ĐÃI</span>
-                <p className={styles.text}>Giảm ngay 20% cho tất cả các gói dịch vụ trong tháng này!</p>
+                <p className={styles.text}>
+                    <span className={styles.quote}>"Vì lợi ích mười năm thì phải trồng cây, vì lợi ích trăm năm thì phải trồng người"</span>
+                    <span className={styles.divider}>—</span>
+                    Giảm ngay 20% cho tất cả các gói dịch vụ!
+                </p>
                 <button
                     className={styles.closeBtn}
                     onClick={onClose}

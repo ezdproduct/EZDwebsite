@@ -35,6 +35,19 @@
 .text {
     font-weight: 500;
     margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.quote {
+    font-style: italic;
+    opacity: 0.9;
+    font-weight: 400;
+}
+
+.divider {
+    opacity: 0.5;
 }
 
 .closeBtn {
@@ -58,7 +71,7 @@
 @media (max-width: 768px) {
     .topBar {
         font-size: 0.75rem;
-        padding: 0.5rem 2rem 0.5rem 1rem;
+        padding: 0.6rem 2.5rem 0.6rem 1rem;
     }
 
     .tag {
@@ -66,7 +79,12 @@
     }
 
     .text {
+        display: block;
         text-align: left;
-        line-height: 1.2;
+        line-height: 1.4;
+    }
+
+    .divider {
+        margin: 0 0.4rem;
     }
 }
