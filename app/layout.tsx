@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Outfit, Phudu } from "next/font/google";
+import { Be_Vietnam_Pro, Phudu } from "next/font/google";
 import "./globals.css";
 
-const outfit = Outfit({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-outfit",
+const beVietnamPro = Be_Vietnam_Pro({
+  subsets: ["latin", "vietnamese"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-be-vietnam-pro",
 });
 
 const phudu = Phudu({
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi">
-      <body className={`${outfit.variable} ${phudu.variable}`}>
+      <body className={`${beVietnamPro.variable} ${phudu.variable}`}>
         {children}
       </body>
     </html>

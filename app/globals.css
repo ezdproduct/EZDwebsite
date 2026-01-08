@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
-
 :root {
   --background: #ffffff;
   --foreground: #020b2d;
@@ -23,7 +21,7 @@ body {
   overflow-x: hidden;
   background: var(--background);
   color: var(--foreground);
-  font-family: 'Outfit', sans-serif;
+  font-family: var(--font-be-vietnam-pro), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -33,7 +31,6 @@ body {
 @media (max-width: 768px) {
   html {
     font-size: 15px;
-    /* Slightly smaller base font for mobile */
   }
 }
 
@@ -44,7 +41,6 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Gradient xanh nhạt và trắng */
   background: linear-gradient(180deg, #f0f7ff 0%, #ffffff 100%);
   z-index: -1;
 }
