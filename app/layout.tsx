@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Phudu } from "next/font/google";
 import "./globals.css";
+import VietnameseOnlyPopup from "@/components/VietnameseOnlyPopup";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="vi">
       <body className={`${beVietnamPro.variable} ${phudu.variable}`}>
         {children}
+        <VietnameseOnlyPopup />
       </body>
     </html>
   );
