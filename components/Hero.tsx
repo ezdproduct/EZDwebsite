@@ -4,10 +4,7 @@ export default function Hero() {
     return (
         <section className={styles.hero}>
             <div className={`${styles.content} fade-in`}>
-                <div className="badge">
-                    <span className="badge-dot"></span>
-                    PHIÊN BẢN 2.0 ĐÃ RA MẮT
-                </div>
+
 
                 <h1 className={styles.title}>
                     Nền tảng <br />
