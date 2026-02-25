@@ -41,10 +41,16 @@
 
 .logoText {
     font-weight: 900;
-    font-size: 20px;
-    letter-spacing: -0.8px;
-    color: var(--foreground);
+    font-size: 42px;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #1d4ed8 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgba(29, 78, 216, 0.2);
     font-family: var(--font-manrope), sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
 }
 
 .links {

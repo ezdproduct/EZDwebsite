@@ -155,7 +155,7 @@ export default function SieuThucTapSinh() {
                             <div className={styles.stepIcon}>🚀</div>
                             <div className={styles.stepHeader}>
                                 <h3>Giai đoạn 3: Dự án thực tế</h3>
-                                <span className={styles.week}>Tuần 6-10</span>
+                                <span className={styles.week}>Tuần 6-11</span>
                             </div>
                             <p>Làm chủ một dự án lớn. Bạn sẽ dẫn dắt việc thực thi, cộng tác với các nhóm liên chức năng và giải quyết các bài toán thật.</p>
                         </div>

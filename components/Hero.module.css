@@ -20,10 +20,10 @@
 .title {
     font-size: clamp(48px, 8vw, 84px);
     font-weight: 900;
-    line-height: 0.95;
+    line-height: 1.15;
     color: var(--foreground);
     margin-bottom: 32px;
-    letter-spacing: -3px;
+    letter-spacing: -2px;
     font-family: var(--font-manrope), sans-serif;
 }
 

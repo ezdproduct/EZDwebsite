@@ -10,14 +10,7 @@ export default function Navbar() {
                 <div className={styles.logo}>
                     <Link href="/">
                         <div className={styles.logoWrapper}>
-                            <div className={styles.rocketIcon}>
-                                <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                    <path d="M12.81 4.36l-1.41 1.41a8.67 8.67 0 012.12 5.09h4.38a1.5 1.5 0 001.06-.44l3-3a1.5 1.5 0 000-2.12l-3-3a1.5 1.5 0 00-2.12 0l-3 3a1.5 1.5 0 00-.44 1.06v3.13a8.67 8.67 0 011.41-5.13zM6.5 13.5l-3 3a1.5 1.5 0 000 2.12l3 3a1.5 1.5 0 002.12 0l3-3a1.5 1.5 0 00.44-1.06V14.43a8.67 8.67 0 01-1.41 5.13l1.41-1.41a8.67 8.67 0 01-2.12-5.09H5.56a1.5 1.5 0 00-1.06.44z" opacity=".4" />
-                                    <path d="M13.5 10.5c0 1.66-1.34 3-3 3s-3-1.34-3-3 1.34-3 3-3 3 1.34 3 3z" />
-                                    <path d="M19.5 4.5l-3 3a1.5 1.5 0 00-.44 1.06H11.5c-1.66 0-3 1.34-3 3V16.5a1.5 1.5 0 001.06.44l3-3a1.5 1.5 0 00.44-1.06h4.5c1.66 0 3-1.34 3-3V7.5a1.5 1.5 0 00-1.06-.44l-3-3a1.5 1.5 0 00-1.44-.06z" />
-                                </svg>
-                            </div>
-                            <span className={styles.logoText}>EZD.vn</span>
+                            <span className={styles.logoText}>EZD</span>
                         </div>
                     </Link>
                 </div>

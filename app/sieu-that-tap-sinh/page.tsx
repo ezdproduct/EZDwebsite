@@ -27,7 +27,7 @@ export default function SieuThatTapSinh() {
                         </h1>
 
                         <p className={styles.description}>
-                            AI agents chuyên biệt cho hơn 10 vị trí công việc: làm việc 24/7, không nghỉ phép, không lỗi con người – giúp doanh nghiệp tiết kiệm đến 70% chi phí junior tasks.
+                            AI agents chuyên biệt cho hơn 10 vị trí công việc: làm việc 24/7, không nghỉ phép – giúp doanh nghiệp tiết kiệm đến 70% chi phí junior tasks.
                         </p>
 
                         <div className={styles.buttons}>
