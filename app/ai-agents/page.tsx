@@ -134,7 +134,7 @@ export default function AiAgents() {
 
                 <section className={styles.newsletterSection}>
                     <h2 className="text-gradient">Bạn sẵn sàng bứt phá?</h2>
-                    <p>Đăng ký ngay để nhận bản tin công nghệ AI agent hàng tuần và danh mục giải pháp chuyển giao mới nhất.</p>
+
                     <div className={styles.inputGroup}>
                         <input type="email" placeholder="Email của bạn" />
                         <button className={styles.submitBtn}>
