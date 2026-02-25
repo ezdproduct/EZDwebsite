@@ -95,7 +95,7 @@
     font-size: 20px;
     line-height: 1.6;
     color: var(--secondary);
-    max-width: 850px;
+    max-width: 1000px;
     font-weight: 500;
 }
 
@@ -322,7 +322,7 @@
 .ctaDesc {
     font-size: 20px;
     opacity: 0.9;
-    max-width: 700px;
+    max-width: 1000px;
     margin: 0 auto 56px;
     font-weight: 500;
 }
