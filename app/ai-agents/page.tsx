@@ -79,10 +79,10 @@ export default function AiAgents() {
                         <h2>DÀNH CHO CÁ NHÂN</h2>
                         <p>Tự xây dựng mô hình kinh doanh và kiếm tiền từ AI Agents một cách chuyên nghiệp.</p>
                         <ul className={styles.featureList}>
-                            <li className={styles.featureItem}>✅ Xây dựng AI Agent tư vấn bán hàng 24/7</li>
-                            <li className={styles.featureItem}>✅ Tạo nguồn thu nhập thụ động</li>
-                            <li className={styles.featureItem}>✅ Tự động hóa sáng tạo nội dung</li>
-                            <li className={styles.featureItem}>✅ Khởi nghiệp tinh gọn với chi phí 0đ</li>
+                            <li className={styles.featureItem}>· Xây dựng AI Agent tư vấn bán hàng 24/7</li>
+                            <li className={styles.featureItem}>· Tạo nguồn thu nhập thụ động</li>
+                            <li className={styles.featureItem}>· Tự động hóa sáng tạo nội dung</li>
+                            <li className={styles.featureItem}>· Khởi nghiệp tinh gọn với chi phí 0đ</li>
                         </ul>
                     </div>
 
@@ -91,10 +91,10 @@ export default function AiAgents() {
                         <h2>DÀNH CHO TỔ CHỨC</h2>
                         <p>Tích hợp AI để tự động hóa quy trình và cung cấp giải pháp thông minh cho khách hàng.</p>
                         <ul className={styles.featureList}>
-                            <li className={styles.featureItem}>✅ Tích hợp AI vào quy trình sẵn có</li>
-                            <li className={styles.featureItem}>✅ Cung cấp giải pháp cho khách hàng</li>
-                            <li className={styles.featureItem}>✅ Giảm thiểu 70% chi phí vận hành</li>
-                            <li className={styles.featureItem}>✅ Triển khai kinh doanh số toàn diện</li>
+                            <li className={styles.featureItem}>· Tích hợp AI vào quy trình sẵn có</li>
+                            <li className={styles.featureItem}>· Cung cấp giải pháp cho khách hàng</li>
+                            <li className={styles.featureItem}>· Giảm thiểu 70% chi phí vận hành</li>
+                            <li className={styles.featureItem}>· Triển khai kinh doanh số toàn diện</li>
                         </ul>
                     </div>
                 </section>
@@ -109,24 +109,24 @@ export default function AiAgents() {
 
                     <div className={styles.securityGrid}>
                         <div className={`${styles.securityCard} ${styles.blueCard}`}>
-                            <h3>🛡️ BẢO MẬT DỮ LIỆU</h3>
+                            <h3>BẢO MẬT DỮ LIỆU</h3>
                             <p>Mã hóa đầu cuối AES-256 · On-premise LLMs · Không chia sẻ dữ liệu huấn luyện.</p>
                             <ul className={styles.featureList}>
-                                <li className={styles.featureItem}>🔒 Dữ liệu thuộc quyền sở hữu của bạn 100%</li>
-                                <li className={styles.featureItem}>🔒 Tùy chọn triển khai offline hoàn toàn</li>
-                                <li className={styles.featureItem}>🔒 Kiểm soát truy cập phân quyền chi tiết</li>
-                                <li className={styles.featureItem}>🔒 Tuyệt đối không chia sẻ dữ liệu</li>
+                                <li className={styles.featureItem}>· Dữ liệu thuộc quyền sở hữu của bạn 100%</li>
+                                <li className={styles.featureItem}>· Tùy chọn triển khai offline hoàn toàn</li>
+                                <li className={styles.featureItem}>· Kiểm soát truy cập phân quyền chi tiết</li>
+                                <li className={styles.featureItem}>· Tuyệt đối không chia sẻ dữ liệu</li>
                             </ul>
                         </div>
 
                         <div className={`${styles.securityCard} ${styles.whiteCard}`}>
-                            <h3>⚖️ ĐẠO ĐỨC AI</h3>
+                            <h3>ĐẠO ĐỨC AI</h3>
                             <p>Minh bạch trong quyết định, loại bỏ thiên kiến, con người giám sát.</p>
                             <ul className={styles.featureList}>
-                                <li className={styles.featureItem}>👁️ Giải trình được các suy luận của AI</li>
-                                <li className={styles.featureItem}>🧠 Kiểm soát bias theo chuẩn quốc tế</li>
-                                <li className={styles.featureItem}>👥 Human-in-the-loop cho tác vụ nhạy cảm</li>
-                                <li className={styles.featureItem}>📜 Tuân thủ quy chuẩn đạo đức mở</li>
+                                <li className={styles.featureItem}>· Giải trình được các suy luận của AI</li>
+                                <li className={styles.featureItem}>· Kiểm soát bias theo chuẩn quốc tế</li>
+                                <li className={styles.featureItem}>· Human-in-the-loop cho tác vụ nhạy cảm</li>
+                                <li className={styles.featureItem}>· Tuân thủ quy chuẩn đạo đức mở</li>
                             </ul>
                         </div>
                     </div>
