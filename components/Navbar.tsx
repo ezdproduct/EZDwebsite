@@ -37,7 +37,7 @@ export default function Navbar() {
                             <Link href="/sieu-thuc-tap-sinh">Siêu thực tập sinh</Link>
                         </div>
                     </div>
-                    <Link href="#">Câu chuyện</Link>
+
                     <Link href="#">Liên hệ</Link>
                 </div>
             </div>
