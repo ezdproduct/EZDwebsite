@@ -40,7 +40,7 @@
 }
 
 .massiveHeading {
-    font-size: clamp(3.5rem, 11vw, 8.5rem);
+    font-size: clamp(2.5rem, 7vw, 5.5rem);
     font-weight: 900;
     /* 900 is more stable for diacritics */
     line-height: 1.1;
