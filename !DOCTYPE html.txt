@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển giao AI · Miễn phí · TechTransfer</title>
+    <!-- Tailwind + fonts -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;700;800;900&family=Space+Grotesk:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" rel="stylesheet">
+    <style>
+        /* custom utilities & design tokens */
+        :root {
+            --primary: #0052FF;        /* xanh đặc trưng từ các bản AI */
+            --primary-light: #e0ebff;
+            --deep-slate: #0c1d1b;
+        }
+        .text-outline {
+            -webkit-text-stroke: 1px currentColor;
+            color: transparent;
+        }
+        .bg-dot-pattern {
+            background-image: radial-gradient(var(--primary) 0.75px, transparent 0.75px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            backdrop-filter: blur(8px);
+            background: rgba(255, 255, 255, 0.85);
+            border: 1px solid rgba(0, 82, 255, 0.15);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.85);
+            border-color: rgba(255, 255, 255, 0.08);
+        }
+        .massive-headline {
+            font-size: clamp(3rem, 12vw, 8rem);
+            line-height: 0.85;
+            letter-spacing: -0.05em;
+        }
+    </style>
+</head>
+<body class="antialiased font-['Epilogue','Space_Grotesk',sans-serif] bg-white dark:bg-[#0c111d] text-[#0c1d1b] dark:text-white transition-colors duration-300">
+
+<!-- toplines: borrowed the bold navigation from first block + primary-blue twist -->
+<div class="relative overflow-x-hidden">
+    <div class="px-6 md:px-12 lg:px-20 border-b border-[#d9e2ef] dark:border-[#1e2a3a] bg-white/90 dark:bg-[#0b101a]/80 backdrop-blur-sm sticky top-0 z-40">
+        <header class="flex items-center justify-between max-w-7xl mx-auto py-4">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary text-3xl">hub</span>
+                <span class="text-lg font-black tracking-tight uppercase">TechTransfer</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#" class="hover:text-primary transition">Dịch vụ</a>
+                <a href="#" class="hover:text-primary transition">Quy trình</a>
+                <a href="#" class="hover:text-primary transition">Dự án</a>
+                <a href="#" class="hover:text-primary transition">Bảo mật</a>
+            </nav>
+            <button class="bg-primary text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-md shadow-primary/30 hover:shadow-lg transition flex items-center gap-2">
+                <span>Liên hệ</span>
+                <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </button>
+        </header>
+    </div>
+
+    <!-- hero section: fusion of huge typography + AI agents + miễn phí banner -->
+    <section class="relative px-6 md:px-12 lg:px-20 pt-10 pb-20 md:pt-16 md:pb-28">
+        <!-- background aura from AI agents version -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150%] h-[150%] bg-[radial-gradient(circle_at_center,rgba(0,82,255,0.08)_0%,transparent_60%)] blur-3xl"></div>
+            <div class="absolute top-20 right-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid lg:grid-cols-12 gap-8 items-center">
+                <!-- left: massive headline & description (inspired by block 4 + 1) -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-primary font-bold tracking-[0.3em] text-sm uppercase bg-primary/5 px-4 py-1.5 rounded-full inline-block">· MIỄN PHÍ · CHUYỂN GIAO</span>
+                    
+                    <h1 class="massive-headline font-black text-primary uppercase flex flex-col">
+                        <span class="relative">CHUYỂN GIAO</span>
+                        <span class="relative flex flex-wrap items-center gap-2 md:gap-4">
+                            CÔNG NGHỆ
+                            <span class="text-[#1a1e2b] dark:text-white text-[0.7em] font-black bg-primary/10 dark:bg-white/10 px-6 py-2 rounded-2xl tracking-tight -rotate-1">AI AGENTS</span>
+                        </span>
+                        <span class="text-[#1a1e2b] dark:text-white text-[0.45em] font-medium mt-3 max-w-2xl leading-tight tracking-normal">
+                            Cho cá nhân khởi nghiệp và tổ chức tối ưu vận hành
+                        </span>
+                    </h1>
+
+                    <!-- dual badges 0đ / miễn phí từ block 4 -->
+                    <div class="flex flex-wrap gap-4 mt-4">
+                        <div class="flex items-center gap-2 bg-primary/10 text-primary font-black text-2xl px-6 py-3 rounded-2xl border border-primary/20">
+                            0₫ <span class="text-sm font-medium opacity-80">/ trọn đời</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white dark:bg-[#151e2e] shadow-sm px-6 py-3 rounded-2xl border border-slate-200 dark:border-slate-700">
+                            <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-green-400 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span></span>
+                            <span class="text-xs font-bold uppercase tracking-wider">cộng đồng mở</span>
+                        </div>
+                    </div>
+
+                    <!-- description mix: from block1 + block2 -->
+                    <p class="text-lg md:text-xl text-slate-600 dark:text-slate-300 max-w-xl leading-relaxed">
+                        Ứng dụng trí tuệ nhân tạo đột phá, chuyển giao miễn phí quy trình, mã nguồn và hệ sinh thái kỹ thuật số giúp bạn tự động hóa, tối ưu doanh thu.
+                    </p>
+
+                    <!-- CTA row: bold buttons -->
+                    <div class="flex flex-wrap gap-5 pt-4">
+                        <button class="bg-primary text-white text-lg font-black px-10 py-5 rounded-full shadow-xl shadow-primary/30 hover:scale-[1.02] transition flex items-center gap-3">
+                            Bắt đầu ngay
+                            <span class="material-symbols-outlined text-2xl">east</span>
+                        </button>
+                        <button class="border-2 border-primary text-primary dark:text-white dark:border-white/30 font-bold px-10 py-5 rounded-full hover:bg-primary/5 transition flex items-center gap-2">
+                            <span class="material-symbols-outlined">visibility</span>
+                            Xem quy trình
+                        </button>
+                    </div>
+                </div>
+
+                <!-- right: asymmetrical card / visual mix (block1 vibe + stats) -->
+                <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                    <div class="relative w-full max-w-[400px]">
+                        <div class="aspect-[4/5] w-full bg-[#f2f7ff] dark:bg-[#162032] rounded-3xl border border-primary/20 overflow-hidden shadow-2xl relative">
+                            <!-- abstract bg lines -->
+                            <div class="absolute inset-0 bg-dot-pattern opacity-30"></div>
+                            <!-- techy image (from block1 with credit placeholder) -->
+                            <div class="absolute inset-0 bg-cover bg-center mix-blend-multiply dark:mix-blend-plus-lighter opacity-30 dark:opacity-40" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuABM1DbszxNxHod7NXCmSVateHnntWdQgMcmNnBPldNZLw-2nJj2vciXwCLSk_B6fXn-RVjKPhmsOXImqeDjzM-bTIA6dYkYWTdP2XqWimVPhqGY6wrJMLkeY4Kmw7OClD63IBrkb4c0-zxTIoDhPuErj-TuSt1__R5pnoR0h4ZVnsDTrHCNoSJBbdhY2zb1WYMB8T97n3HFGgFtG5OVEterNGDoWj14VFvnqUFCYPw5Y-wE33Qi_FFiXw11GBbz29ziHUmI00hArs');"></div>
+                            <!-- gradient overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 via-transparent to-transparent"></div>
+
+                            <!-- floating card inside image (like block1) -->
+                            <div class="absolute bottom-6 left-4 right-4 glass-card rounded-xl p-4 shadow-xl">
+                                <div class="flex items-center gap-2 text-primary">
+                                    <span class="material-symbols-outlined fill-1">verified</span>
+                                    <span class="text-xs font-black tracking-widest">AGENT ECOSYSTEM</span>
+                                </div>
+                                <div class="text-2xl font-black mt-1">+2.500</div>
+                                <div class="text-xs opacity-70 dark:opacity-80">lập trình viên & doanh nghiệp đã tham gia</div>
+                            </div>
+                        </div>
+                        <!-- floating badge (bolt) -->
+                        <div class="absolute -top-5 -left-5 w-16 h-16 bg-primary rounded-2xl flex items-center justify-center text-white shadow-2xl animate-pulse">
+                            <span class="material-symbols-outlined text-4xl">bolt</span>
+                        </div>
+                        <!-- small 0₫ badge floating right -->
+                        <div class="absolute -bottom-3 -right-3 bg-primary text-white font-black text-xl px-5 py-2 rounded-full shadow-xl rotate-3">
+                            #miễnphí
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- benefits grid: fusion from block1 (cộng đồng, mã nguồn mở, triển khai nhanh) + AI agents specific -->
+    <div class="px-6 md:px-12 lg:px-20 py-16 bg-[#f8fcff] dark:bg-[#0d1421] border-y border-primary/10">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8">
+            <!-- card 1 -->
+            <div class="bg-white dark:bg-[#121b2b] p-8 rounded-2xl border-l-8 border-primary shadow-sm hover:shadow-md transition">
+                <span class="material-symbols-outlined text-primary text-3xl mb-4">groups</span>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Cộng đồng kỹ sư</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Kết nối 500+ chuyên gia AI, chia sẻ mã nguồn agent và quy trình thực chiến.</p>
+            </div>
+            <!-- card 2 -->
+            <div class="bg-white dark:bg-[#121b2b] p-8 rounded-2xl border-l-8 border-primary shadow-sm">
+                <span class="material-symbols-outlined text-primary text-3xl mb-4">terminal</span>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Mã nguồn mở agents</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Toàn bộ thư viện AI agent, pipeline xử lý dữ liệu được public miễn phí.</p>
+            </div>
+            <!-- card 3 -->
+            <div class="bg-white dark:bg-[#121b2b] p-8 rounded-2xl border-l-8 border-primary shadow-sm">
+                <span class="material-symbols-outlined text-primary text-3xl mb-4">rocket_launch</span>
+                <h3 class="text-xl font-black mb-2 tracking-tight">Triển khai nhanh</h3>
+                <p class="text-sm text-slate-500 dark:text-slate-400">Quy trình chuẩn hoá giúp giảm 70% thời gian áp dụng AI vào vận hành.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- đạo đức & bảo mật section (fusion from block5 and block6) -->
+    <section class="px-6 md:px-12 lg:px-20 py-20 max-w-7xl mx-auto">
+        <div class="text-center mb-14">
+            <span class="text-primary font-black text-sm tracking-[0.3em] uppercase bg-primary/5 px-5 py-2 rounded-full">Cam kết · Bảo mật · Minh bạch</span>
+            <h2 class="text-4xl md:text-5xl font-black mt-6 uppercase">Vận hành có <span class="text-primary">trách nhiệm</span></h2>
+        </div>
+        <div class="grid lg:grid-cols-2 gap-8">
+            <!-- bảo mật block (inspired by block5) -->
+            <div class="bg-primary text-white p-10 rounded-3xl shadow-2xl flex flex-col">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-4xl">verified_user</span>
+                    <h3 class="font-black text-2xl">Bảo mật dữ liệu</h3>
+                </div>
+                <p class="text-blue-100 text-lg mb-8">Mã hóa đầu cuối AES-256 · On-premise LLMs · Không chia sẻ dữ liệu huấn luyện.</p>
+                <ul class="space-y-5 text-base">
+                    <li class="flex gap-4"><span class="material-symbols-outlined">lock</span><span>Dữ liệu thuộc quyền sở hữu của bạn 100%</span></li>
+                    <li class="flex gap-4"><span class="material-symbols-outlined">cloud_off</span><span>Tùy chọn triển khai offline hoàn toàn</span></li>
+                    <li class="flex gap-4"><span class="material-symbols-outlined">admin_panel_settings</span><span>Kiểm soát truy cập và phân quyền chi tiết</span></li>
+                </ul>
+            </div>
+            <!-- đạo đức / minh bạch -->
+            <div class="bg-white dark:bg-[#121b2b] border-2 border-primary p-10 rounded-3xl shadow-lg flex flex-col">
+                <div class="flex items-center gap-3 mb-6 text-primary">
+                    <span class="material-symbols-outlined text-4xl">balance</span>
+                    <h3 class="font-black text-2xl dark:text-white">Đạo đức AI</h3>
+                </div>
+                <p class="text-slate-500 dark:text-slate-400 text-lg mb-8">Minh bạch trong quyết định, loại bỏ thiên kiến, con người giám sát.</p>
+                <ul class="space-y-5 text-base text-slate-700 dark:text-slate-300">
+                    <li class="flex gap-4"><span class="material-symbols-outlined text-primary">visibility</span><span>Giải trình được các suy luận của AI</span></li>
+                    <li class="flex gap-4"><span class="material-symbols-outlined text-primary">psychology</span><span>Kiểm soát bias theo chuẩn OECD</span></li>
+                    <li class="flex gap-4"><span class="material-symbols-outlined text-primary">supervisor_account</span><span>Human-in-the-loop cho tác vụ nhạy cảm</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA lớn cuối (blend của block4 và block1) -->
+    <div class="px-6 py-20 bg-gradient-to-br from-primary/5 to-transparent">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-black uppercase tracking-tight">Bạn sẵn sàng <span class="text-primary">bứt phá</span>?</h2>
+            <p class="text-xl opacity-80 max-w-2xl mx-auto">Đăng ký ngay để nhận bản tin công nghệ AI agent hàng tuần và danh mục giải pháp chuyển giao mới nhất.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+                <input type="email" placeholder="Email của bạn" class="flex-1 px-6 py-5 rounded-full border-2 border-slate-200 dark:border-slate-700 bg-white dark:bg-[#121b2b] focus:ring-4 focus:ring-primary/30 outline-none">
+                <button class="bg-primary text-white font-black px-10 py-5 rounded-full shadow-xl hover:shadow-2xl transition flex items-center justify-center gap-2 text-lg">
+                    Tham gia <span class="material-symbols-outlined">send</span>
+                </button>
+            </div>
+            <p class="text-sm text-slate-400 font-semibold flex items-center justify-center gap-2"><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>Hoàn toàn miễn phí, hủy đăng ký bất cứ lúc nào</p>
+        </div>
+    </div>
+
+    <!-- footer sạch (tổng hợp từ các block) -->
+    <footer class="px-6 md:px-12 lg:px-20 py-10 border-t border-primary/10 dark:border-white/5">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined">hub</span>
+                <span class="font-black tracking-tight uppercase">TechTransfer</span>
+            </div>
+            <div class="flex gap-8 text-sm font-medium text-slate-500 dark:text-slate-400">
+                <a href="#" class="hover:text-primary">Chính sách</a>
+                <a href="#" class="hover:text-primary">Bảo mật</a>
+                <a href="#" class="hover:text-primary">Đạo đức AI</a>
+                <a href="#" class="hover:text-primary">Liên hệ</a>
+            </div>
+            <div class="text-xs text-slate-400">© 2025 · Chuyển giao công nghệ mở · miễn phí toàn phần</div>
+        </div>
+    </footer>
+</div>
+<!-- tiny script để dark mode nếu cần (optional) nhưng giữ class light là chính -->
+</body>
+</html>

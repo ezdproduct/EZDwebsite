@@ -1,0 +1,463 @@
+.page {
+    color: var(--foreground);
+    background: white;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    font-family: var(--font-epilogue), var(--font-space-grotesk), sans-serif;
+}
+
+.bgAura {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle at center, rgba(37, 99, 235, 0.08) 0%, rgba(37, 99, 235, 0.03) 40%, transparent 70%);
+    filter: blur(80px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 180px 24px 100px;
+}
+
+.hero {
+    max-width: 1400px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.massiveHeading {
+    font-size: clamp(3.5rem, 11vw, 8.5rem);
+    font-weight: 900;
+    /* 900 is more stable for diacritics */
+    line-height: 1.1;
+    /* Increased to fix overlapping accents and descenders */
+    letter-spacing: -0.05em;
+    /* Slightly less tight for readability */
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-top: 64px;
+    /* More space from top badge */
+    margin-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-be-vietnam-pro), sans-serif;
+    /* Better support for Vietnamese diacritics at extreme sizes */
+}
+
+.headingRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 5px 0;
+}
+
+.aiBadge {
+    background: #f1f5f9;
+    color: var(--foreground);
+    padding: 12px 36px;
+    border-radius: 20px;
+    font-size: 0.55em;
+    /* Slightly smaller to feel more like a tag */
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    /* Spaced out for tech feel */
+    box-shadow: var(--shadow-sm);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e2e8f0;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.massiveHeading .subText {
+    font-size: clamp(18px, 0.3em, 28px);
+    font-weight: 600;
+    margin-top: 24px;
+    max-width: 900px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--foreground);
+    opacity: 0.8;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subHeading {
+    color: #e2e8f0;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    padding: 10px 32px;
+    margin-top: 24px;
+    width: fit-content;
+    align-self: center;
+    font-size: 0.35em;
+    letter-spacing: 0.15em;
+    border-radius: var(--radius-sm);
+    font-weight: 900;
+}
+
+.heroBadges {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.zeroBadge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #eff6ff;
+    color: var(--primary);
+    font-weight: 1000;
+    font-size: 26px;
+    padding: 14px 28px;
+    border-radius: 20px;
+    border: 1px solid rgba(37, 99, 235, 0.15);
+    box-shadow: var(--shadow-sm);
+}
+
+.zeroBadge span {
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.heroDesc {
+    font-size: clamp(18px, 2.5vw, 22px);
+    color: var(--secondary);
+    max-width: 800px;
+    margin: 0 auto 48px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.heroButtons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+}
+
+/* Benefits Grid */
+.benefitsSection {
+    width: 100%;
+    max-width: 1280px;
+    padding: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.benefitCard {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    border-left: 8px solid var(--primary);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.benefitCard:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-4px);
+}
+
+.benefitIcon {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 24px;
+}
+
+.benefitCard h3 {
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.benefitCard p {
+    font-size: 15px;
+    color: var(--secondary);
+    line-height: 1.6;
+}
+
+/* Tiers */
+.tierGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1280px;
+    width: 100%;
+    margin: 80px 0;
+}
+
+.tierCard {
+    position: relative;
+    padding: 64px;
+    border-radius: var(--radius-xl);
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.individual {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 40px 80px rgba(37, 99, 235, 0.15);
+}
+
+.individual:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 50px 100px rgba(37, 99, 235, 0.25);
+}
+
+.organization {
+    background: white;
+    border: 2px solid #e2e8f0;
+    color: var(--primary);
+}
+
+.organization:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-lg);
+}
+
+.priceTag {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: white;
+    color: var(--primary);
+    font-weight: 950;
+    font-size: 26px;
+    padding: 12px 28px;
+    border-radius: 100px;
+    transform: rotate(3deg);
+    box-shadow: var(--shadow-md);
+}
+
+.organization .priceTag {
+    background: var(--primary);
+    color: white;
+    transform: rotate(-3deg);
+}
+
+.tierCard h2 {
+    font-size: 28px;
+    font-weight: 950;
+    letter-spacing: 0.05em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.tierCard p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 56px;
+    line-height: 1.6;
+}
+
+.organization p {
+    color: var(--secondary);
+}
+
+.featureList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.ctaSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    margin: 100px 0;
+}
+
+.startBtn {
+    background: var(--primary);
+    color: white;
+    padding: 32px 96px;
+    border-radius: 100px;
+    font-size: 26px;
+    font-weight: 950;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 30px 60px rgba(37, 99, 235, 0.25);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.startBtn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.02) translateY(-4px);
+    box-shadow: 0 40px 80px rgba(37, 99, 235, 0.35);
+}
+
+/* Security */
+.securitySection {
+    width: 100%;
+    max-width: 1280px;
+    margin: 120px 0;
+    text-align: center;
+}
+
+.securityGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.securityCard {
+    padding: 64px;
+    border-radius: var(--radius-lg);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.blueCard {
+    background: var(--primary);
+    color: white;
+    box-shadow: var(--shadow-lg);
+}
+
+.whiteCard {
+    background: white;
+    border: 2px solid #e2e8f0;
+    color: var(--foreground);
+}
+
+.securityCard h3 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-transform: uppercase;
+}
+
+.securityCard p {
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+/* Newsletter */
+.newsletterSection {
+    width: 100%;
+    max-width: 900px;
+    margin: 80px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.newsletterSection h2 {
+    font-size: clamp(32px, 6vw, 64px);
+    font-weight: 950;
+    letter-spacing: -2px;
+}
+
+.newsletterSection p {
+    font-size: 18px;
+    color: var(--secondary);
+    max-width: 600px;
+}
+
+.inputGroup {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    gap: 12px;
+}
+
+.inputGroup input {
+    flex: 1;
+    padding: 20px 32px;
+    border-radius: 100px;
+    border: 2px solid #e2e8f0;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.inputGroup input:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.submitBtn {
+    background: var(--primary);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 100px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: var(--shadow-md);
+}
+
+.submitBtn:hover {
+    background: var(--primary-dark);
+}
+
+@media (max-width: 1024px) {
+
+    .tierGrid,
+    .securityGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .massiveHeading {
+        font-size: 4.5rem;
+    }
+
+    .tierCard,
+    .securityCard {
+        padding: 40px;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+}
