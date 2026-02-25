@@ -13,10 +13,7 @@ export default function SieuThucTapSinh() {
                 <section className={`${styles.hero} glass`}>
                     <div className={styles.heroGrid}>
                         <div className={styles.heroContent}>
-                            <div className="badge">
-                                <span className="badge-dot"></span>
-                                CHƯƠNG TRÌNH CHÍNH THỨC 2024
-                            </div>
+
                             <h1 className={styles.title}>
                                 Giải phóng tiềm năng cùng <br />
                                 <span className="text-gradient">Siêu Thực Tập Sinh</span>
