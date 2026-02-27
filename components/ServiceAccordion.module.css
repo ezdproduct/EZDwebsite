@@ -135,7 +135,6 @@
 .content {
     position: relative;
     z-index: 2;
-    margin-top: auto;
     width: 100%;
 }
 
