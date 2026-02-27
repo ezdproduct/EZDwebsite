@@ -10,7 +10,7 @@ const SERVICES = [
         title: "Siêu 'thật' tập sinh",
         description: "Giải pháp \"thuê\" nhân sự ảo, nhằm mang đến đội ngũ AI Agent có khả năng làm việc hiệu quả ở các vị trí Marketing, Data, Tech... với chi phí tối ưu.",
         link: "/sieu-that-tap-sinh",
-        gradient: "linear-gradient(135deg, #2563eb 0%, #1e40af 100%)",
+        gradient: "linear-gradient(135deg, #1e40af 0%, #2563eb 100%)",
         textColor: "#ffffff"
     },
     {
@@ -18,7 +18,7 @@ const SERVICES = [
         title: "Siêu thực tập sinh",
         description: "Chương trình thực tập huấn luyện thế hệ tương lai, giúp các bạn \"nâng cấp\" qua các dự án thực chiến có tác động thật.",
         link: "/sieu-thuc-tap-sinh",
-        gradient: "linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%)",
+        gradient: "linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%)",
         textColor: "#0f172a"
     },
     {
@@ -26,7 +26,7 @@ const SERVICES = [
         title: "Chuyển giao công nghệ",
         description: "Chuyển giao công nghệ AI chuyên biệt, giúp doanh nghiệp tự động hóa quy trình và tối ưu hóa doanh thu 24/7.",
         link: "/ai-agents",
-        gradient: "linear-gradient(135deg, #0f172a 0%, #020617 100%)",
+        gradient: "linear-gradient(135deg, #1e293b 0%, #020617 100%)",
         textColor: "#ffffff"
     }
 ];
@@ -65,8 +65,8 @@ export default function ServiceAccordion() {
                                     <div className={styles.details}>
                                         <p className={styles.description} style={{ color: service.textColor === '#ffffff' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(15, 23, 42, 0.8)' }}>{service.description}</p>
                                         <Link href={service.link} className={styles.link} style={{ color: service.textColor, borderColor: service.textColor }}>
-                                            Tìm hiểu thêm
-                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            Xem chi tiết
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                                                 <line x1="5" y1="12" x2="19" y2="12"></line>
                                                 <polyline points="12 5 19 12 12 19"></polyline>
                                             </svg>

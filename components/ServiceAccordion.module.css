@@ -77,20 +77,20 @@
     z-index: 2;
     margin-bottom: auto;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .toggle {
-    width: 64px;
-    height: 64px;
-    border: 2px solid rgba(255, 255, 255, 0.6);
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.03);
 }
 
 .panel:hover .toggle {
@@ -102,8 +102,8 @@
 .plus,
 .minus {
     position: relative;
-    width: 24px;
-    height: 3px;
+    width: 16px;
+    height: 2px;
     background: white;
     transition: transform 0.4s ease;
     border-radius: 4px;
