@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 140px 24px 100px;
+    padding: 80px 24px 100px;
     background: #f8fbff;
     overflow: hidden;
 }
@@ -328,7 +328,7 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding: 100px 16px 60px;
+        padding: 60px 16px 60px;
         min-height: auto;
     }
 

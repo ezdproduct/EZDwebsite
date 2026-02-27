@@ -12,7 +12,7 @@
 }
 
 .aboutHero {
-    padding: 200px 0 100px;
+    padding: 100px 0 100px;
     text-align: center;
     position: relative;
     background: radial-gradient(circle at 50% -20%, rgba(37, 99, 235, 0.08) 0%, transparent 70%);
@@ -238,7 +238,7 @@
 
 @media (max-width: 768px) {
     .aboutHero {
-        padding: 140px 0 60px;
+        padding: 80px 0 60px;
     }
 
     .title {
