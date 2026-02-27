@@ -51,6 +51,7 @@ export default function Features() {
             <div className="container">
                 <div className={styles.header}>
                     <div className="badge" style={{ marginBottom: '16px', background: 'rgba(37, 99, 235, 0.05)' }}>
+                        <span className="badge-dot"></span>
                         DANH MỤC GIẢI PHÁP AI
                     </div>
                     <h2 className={styles.title}>

@@ -6,8 +6,6 @@ import styles from "./page.module.css";
 export default function SieuThatTapSinh() {
     return (
         <div className={styles.page}>
-            <Navbar />
-
             <section className={`${styles.hero} fade-in`}>
                 <div className={styles.heroBg}>
                     <div className={styles.blob1}></div>

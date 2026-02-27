@@ -6,8 +6,6 @@ import styles from "./page.module.css";
 export default function SieuThucTapSinh() {
     return (
         <div className={styles.page}>
-            <Navbar />
-
             <main className={`${styles.main} fade-in`}>
                 {/* Hero Section */}
                 <section className={`${styles.hero} glass`}>

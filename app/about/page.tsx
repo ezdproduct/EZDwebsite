@@ -5,8 +5,6 @@ import Link from 'next/link';
 export default function AboutPage() {
     return (
         <main className={styles.main}>
-            <Navbar />
-
             {/* Hero Section */}
             <section className={styles.aboutHero}>
                 <div className={styles.container}>
