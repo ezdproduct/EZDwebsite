@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Be_Vietnam_Pro, Phudu, Manrope, Epilogue, Space_Grotesk, Inter, Chakra_Petch, Exo_2 } from "next/font/google";
 import "./globals.css";
 import VietnameseOnlyPopup from "@/components/VietnameseOnlyPopup";
+import Navbar from "@/components/Navbar";
 
 const beVietnamPro = Be_Vietnam_Pro({
   subsets: ["latin", "vietnamese"],
@@ -66,6 +67,7 @@ export default function RootLayout({
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" />
       </head>
       <body className={`${beVietnamPro.variable} ${phudu.variable} ${manrope.variable} ${epilogue.variable} ${spaceGrotesk.variable} ${inter.variable} ${chakraPetch.variable} ${exo2.variable}`}>
+        <Navbar />
         {children}
         {/* <VietnameseOnlyPopup /> */}
       </body>

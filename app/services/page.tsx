@@ -1,6 +1,5 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -34,7 +33,6 @@ const services = [
 export default function ServicesPage() {
     return (
         <div className={styles.page}>
-            <Navbar />
 
             <div className={styles.bgAura}></div>
 
