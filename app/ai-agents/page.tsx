@@ -205,7 +205,6 @@ export default function AiAgents() {
             <main className={`${styles.main} fade-in`}>
                 <section className={styles.hero}>
                     <div className="badge">
-                        <span className="badge-dot"></span>
                         · MIỄN PHÍ · CHUYỂN GIAO
                     </div>
 
@@ -317,7 +316,6 @@ export default function AiAgents() {
                         </button>
                     </div>
                     <p style={{ fontSize: '14px', color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                        <span className="badge-dot" style={{ background: '#22c55e', width: '6px', height: '6px' }}></span>
                         Hoàn toàn miễn phí, hủy bất cứ lúc nào
                     </p>
                 </section>

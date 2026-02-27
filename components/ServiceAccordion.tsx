@@ -49,7 +49,15 @@ export default function ServiceAccordion() {
                             }}
                             onClick={() => setActiveIndex(index)}
                         >
-
+                            <div className={styles.header}>
+                                <div className={styles.toggle} style={{ borderColor: service.textColor === '#ffffff' ? 'rgba(255, 255, 255, 0.4)' : 'rgba(0, 0, 0, 0.2)' }}>
+                                    {isActive ? (
+                                        <span className={styles.minus} style={{ backgroundColor: service.textColor }}></span>
+                                    ) : (
+                                        <span className={styles.plus} style={{ backgroundColor: service.textColor }}></span>
+                                    )}
+                                </div>
+                            </div>
 
                             <div className={styles.content}>
                                 <h2 className={styles.title} style={{ color: service.textColor }}>{service.title}</h2>

@@ -17,7 +17,6 @@ export default function SieuThatTapSinh() {
                 <div className={styles.container}>
                     <div className={styles.heroGlass}>
                         <div className="badge">
-                            <span className="badge-dot"></span>
                             GIẢI PHÁP NHÂN SỰ AI TOÀN DIỆN
                         </div>
 
