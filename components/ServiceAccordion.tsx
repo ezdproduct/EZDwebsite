@@ -7,7 +7,7 @@ import styles from './ServiceAccordion.module.css';
 const SERVICES = [
     {
         id: 'sieu-that',
-        title: "Siêu 'thật' tập sinh",
+        title: "Siêu\u00A0'thật' tập\u00A0sinh",
         description: "Giải pháp \"thuê\" nhân sự ảo, nhằm mang đến đội ngũ AI Agent có khả năng làm việc hiệu quả ở các vị trí Marketing, Data, Tech... với chi phí tối ưu.",
         link: "/sieu-that-tap-sinh",
         gradient: "linear-gradient(135deg, #1e40af 0%, #2563eb 100%)",
@@ -15,7 +15,7 @@ const SERVICES = [
     },
     {
         id: 'sieu-thuc',
-        title: "Siêu thực tập sinh",
+        title: "Siêu thực\u00A0tập\u00A0sinh",
         description: "Chương trình thực tập huấn luyện thế hệ tương lai, giúp các bạn \"nâng cấp\" qua các dự án thực chiến có tác động thật.",
         link: "/sieu-thuc-tap-sinh",
         gradient: "linear-gradient(135deg, #f8fafc 0%, #cbd5e1 100%)",
@@ -23,7 +23,7 @@ const SERVICES = [
     },
     {
         id: 'ai-agents',
-        title: "Chuyển giao công nghệ",
+        title: "Chuyển\u00A0giao công\u00A0nghệ",
         description: "Chuyển giao công nghệ AI chuyên biệt, giúp doanh nghiệp tự động hóa quy trình và tối ưu hóa doanh thu 24/7.",
         link: "/ai-agents",
         gradient: "linear-gradient(135deg, #1e293b 0%, #020617 100%)",

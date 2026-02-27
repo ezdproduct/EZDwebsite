@@ -156,15 +156,16 @@
 .panel:not(.active) .title {
     transform: none;
     position: static;
-    font-size: 36px;
+    font-size: 28px;
     white-space: normal;
     text-align: center;
-    line-height: 1.4;
+    line-height: 1.25;
     opacity: 1;
     font-weight: 950;
     width: 0;
     min-width: min-content;
     margin: 0 auto;
+    letter-spacing: -0.01em;
 }
 
 .details {
