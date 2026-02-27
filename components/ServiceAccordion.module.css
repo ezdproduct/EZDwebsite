@@ -135,12 +135,12 @@
 .title {
     font-family: var(--font-chakra-petch), sans-serif;
     font-size: clamp(24px, 4vw, 48px);
-    font-weight: 800;
+    font-weight: 600;
     margin: 0;
     white-space: nowrap;
     transition: all 0.5s ease;
     text-transform: uppercase;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.01em;
 }
 
 .panel:not(.active) .header {
@@ -156,16 +156,15 @@
 .panel:not(.active) .title {
     transform: none;
     position: static;
-    font-size: 28px;
+    font-size: 36px;
     white-space: normal;
     text-align: center;
-    line-height: 1.25;
+    line-height: 1.4;
     opacity: 1;
-    font-weight: 950;
+    font-weight: 600;
     width: 0;
     min-width: min-content;
     margin: 0 auto;
-    letter-spacing: -0.01em;
 }
 
 .details {
@@ -189,7 +188,7 @@
     align-items: center;
     gap: 12px;
     color: white;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 2px solid white;
