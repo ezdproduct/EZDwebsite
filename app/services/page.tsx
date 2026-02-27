@@ -1,5 +1,6 @@
 "use client";
 
+
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -33,6 +34,7 @@ const services = [
 export default function ServicesPage() {
     return (
         <div className={styles.page}>
+
 
             <div className={styles.bgAura}></div>
 
