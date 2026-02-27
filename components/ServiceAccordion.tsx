@@ -60,7 +60,11 @@ export default function ServiceAccordion() {
                             </div>
 
                             <div className={styles.content}>
-                                <h2 className={styles.title} style={{ color: service.textColor }}>{service.title}</h2>
+                                <h2 className={styles.title} style={{ color: service.textColor }}>
+                                    {service.title.split(' ').map((word, i) => (
+                                        <span key={i} className={styles.word}>{word}</span>
+                                    ))}
+                                </h2>
                                 {isActive && (
                                     <div className={styles.details}>
                                         <p className={styles.description} style={{ color: service.textColor === '#ffffff' ? 'rgba(255, 255, 255, 0.9)' : 'rgba(15, 23, 42, 0.8)' }}>{service.description}</p>
