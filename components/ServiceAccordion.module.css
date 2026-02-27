@@ -63,67 +63,9 @@
     opacity: 0.1;
 }
 
-.panel.active .header {
-    margin-bottom: 40px;
-}
-
 .panel.active .content {
     margin-top: 0;
 }
-
-
-.header {
-    position: relative;
-    z-index: 2;
-    margin-bottom: auto;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.toggle {
-    width: 44px;
-    height: 44px;
-    border: 1.5px solid rgba(255, 255, 255, 0.4);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-    background: rgba(255, 255, 255, 0.03);
-}
-
-.panel:hover .toggle {
-    border-color: rgba(255, 255, 255, 1);
-    transform: scale(1.1);
-    background: rgba(255, 255, 255, 0.15);
-}
-
-.plus,
-.minus {
-    position: relative;
-    width: 16px;
-    height: 2px;
-    background: white;
-    transition: transform 0.4s ease;
-    border-radius: 4px;
-}
-
-.plus::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: inherit;
-    transform: rotate(90deg);
-}
-
-.active .plus {
-    transform: rotate(180deg);
-}
-
 
 .content {
     position: relative;
@@ -142,10 +84,7 @@
     letter-spacing: -0.02em;
 }
 
-.panel:not(.active) .header {
-    margin-bottom: 20px;
-    justify-content: center;
-}
+
 
 .panel:not(.active) .content {
     margin-top: 0;
@@ -233,19 +172,7 @@
         margin-top: 10px;
     }
 
-    .header {
-        margin-bottom: 20px;
-    }
 
-    .toggle {
-        width: 48px;
-        height: 48px;
-    }
-
-    .plus,
-    .minus {
-        width: 18px;
-    }
 
     .details {
         padding-right: 0;
