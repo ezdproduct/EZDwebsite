@@ -133,9 +133,9 @@
 }
 
 .title {
-    font-family: var(--font-chakra-petch), sans-serif;
+    font-family: var(--font-exo-2), sans-serif;
     font-size: clamp(24px, 4vw, 48px);
-    font-weight: 800;
+    font-weight: 900;
     margin: 0;
     white-space: nowrap;
     transition: all 0.5s ease;
@@ -161,7 +161,7 @@
     text-align: center;
     line-height: 1.4;
     opacity: 1;
-    font-weight: 950;
+    font-weight: 900;
     width: 0;
     min-width: min-content;
     margin: 0 auto;
@@ -183,12 +183,12 @@
 }
 
 .link {
-    font-family: var(--font-chakra-petch), sans-serif;
+    font-family: var(--font-exo-2), sans-serif;
     display: inline-flex;
     align-items: center;
     gap: 12px;
     color: white;
-    font-weight: 700;
+    font-weight: 800;
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 2px solid white;
