@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Phudu, Manrope, Epilogue, Space_Grotesk } from "next/font/google";
+import { Be_Vietnam_Pro, Phudu, Manrope, Epilogue, Space_Grotesk, Inter } from "next/font/google";
 import "./globals.css";
 import VietnameseOnlyPopup from "@/components/VietnameseOnlyPopup";
 
@@ -33,6 +33,11 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
 });
 
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
 export const metadata: Metadata = {
   title: "Ezd - Tương lai của sáng tạo",
   description: "Khám phá nền tảng sáng tạo thế hệ mới với Next.js và AI.",
@@ -48,7 +53,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" />
       </head>
-      <body className={`${beVietnamPro.variable} ${phudu.variable} ${manrope.variable} ${epilogue.variable} ${spaceGrotesk.variable}`}>
+      <body className={`${beVietnamPro.variable} ${phudu.variable} ${manrope.variable} ${epilogue.variable} ${spaceGrotesk.variable} ${inter.variable}`}>
         {children}
         {/* <VietnameseOnlyPopup /> */}
       </body>

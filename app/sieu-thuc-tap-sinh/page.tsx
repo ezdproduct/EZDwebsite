@@ -15,11 +15,11 @@ export default function SieuThucTapSinh() {
                         <div className={styles.heroContent}>
 
                             <h1 className={styles.title}>
-                                Giải phóng tiềm năng cùng <br />
+                                Giải phóng tiềm năng <br /> cùng <br />
                                 <span className="text-gradient">Siêu Thực Tập Sinh</span>
                             </h1>
                             <p className={styles.description}>
-                                Cây cầu nối tối ưu giữa lý thuyết học thuật và tác động thực tế. Tham gia chương trình thực tập tinh hoa được thiết kế cho các nhà lãnh đạo tương lai.
+                                Cây cầu nối tối ưu giữa lý thuyết học thuật và tác động thực tế. Tham gia chương trình thực tập được thiết kế cho thế hệ chuyển đổi số tương lai.
                             </p>
 
                             <div className={styles.heroButtons}>
@@ -34,15 +34,6 @@ export default function SieuThucTapSinh() {
                                     Tải Syllabus
                                 </button>
                             </div>
-
-                            <div className={styles.socialProof}>
-                                <div className={styles.avatars}>
-                                    <div className={styles.avatar} style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWBLmQ4bHo_h_R4oHM1PSd1E4ueO6TyW7f692OfMle8Qfsl7UQGiagdV6hEqptDAaS2BI0Y21Ix5lFk-LOV71omKzVp3eam-mJEgxOq6F4ZJJ7uBo_r1owKTR7q-JKPp8LvIhXvxILPtQjvPFfEtETDFwYxKsor38LbpghWRTWS9MQh5qmKtdhSsbVNSTvuRorQh8qlFMrLf543S4myEZ2sloQ-EySxvOZx4oxEtfqLtX5Kj2iNCBViTuJa5TapP2qYBkb-1LwOaEM')" }}></div>
-                                    <div className={styles.avatar} style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5GvC1wim_CY-0j4kwmb2ySitOGXJg7X0pYLF4zgjd4zSs4lPqaxV-5MSpyyKE16gdPpZM5RX-oS4bK0upKOpTKy-mNCEppiDA3CF2J698CNQHrPZ8ldBpbZjFHx9qC6CKfWQy6egWElk5NU-zWp21wa23DtX5tm7WtRjeFB2l-Dv9p3SBdgO9xGNtwrb7ZvrPwcCyTo2SVkBUBZEqrXzCQSjTBrvjAXssdSW2me02ytBAmfdBFT6QjLus4z08QhjKsYPD8JUhTUvD')" }}></div>
-                                    <div className={styles.avatar} style={{ backgroundImage: "url('https://lh3.googleusercontent.com/aida-public/AB6AXuCiyJMtedhFkPfhdZTiCQ4aUuyYFB8BgFgekrlqT5f2AuSYCj3lBUU5MtYvXpFEDgsgsbnxYC5kELrKs_7kHJBgDgM4um29nJZ2VYY3KnxAPXuPDa_wsIr9d5h3UHJPE0FiBNJYw1HqCYiEakJe4sJ4P83mddiryONFvyEbL95cGLkyh8QX5RpfTmhdaEt6SDFE0f5ZePUVV9-sTu3ckyynlNrknqvKkIuJRTh_6KZ2oCMFjSId77cTVvVPi5iWKiSJefkf_9WbPrMi')" }}></div>
-                                </div>
-                                <p className={styles.proofText}>Được tham gia bởi hơn 500 sinh viên từ các đại học hàng đầu</p>
-                            </div>
                         </div>
 
                         <div className={styles.heroImageContainer}>
@@ -56,7 +47,7 @@ export default function SieuThucTapSinh() {
                                     <p>Khóa tiếp theo</p>
                                     <p>Bắt đầu 15 tháng 10</p>
                                 </div>
-                                <div className={styles.calIcon}>📅</div>
+
                             </div>
                         </div>
                     </div>
@@ -65,23 +56,23 @@ export default function SieuThucTapSinh() {
                 {/* Features Section */}
                 <section className={`${styles.features} fade-in`}>
                     <div className={styles.sectionHeader}>
-                        <h2 className="font-manrope">Tại sao chọn EZD Super Interns?</h2>
-                        <p>Vượt qua những công việc pha cà phê đơn thuần. Trải nghiệm chương trình tập trung vào tác động, nâng cao kỹ năng và kết nối thực tế.</p>
+                        <h2 className="font-manrope">Siêu thực tập sinh có gì?</h2>
+                        <p>Xóa bỏ rào cản giữa giảng đường và thực tế. Tham gia lộ trình huấn luyện chuyên sâu để trở thành nhân tố nòng cốt trong kỷ nguyên AI.</p>
                     </div>
 
                     <div className={styles.featuresGrid}>
                         <div className={`${styles.featureCard} glass`}>
-                            <div className={styles.iconBox} style={{ background: '#eff6ff', color: '#2b6cee' }}>💼</div>
+
                             <h3>Dự án thực tế</h3>
                             <p>Làm việc trên các tình huống kinh doanh trực tiếp. Code và chiến lược của bạn sẽ tác động đến người dùng thực.</p>
                         </div>
                         <div className={`${styles.featureCard} glass`}>
-                            <div className={styles.iconBox} style={{ background: '#eef2ff', color: '#4f46e5' }}>👥</div>
+
                             <h3>Cố vấn chuyên gia</h3>
                             <p>Các buổi 1-kèm-1 hàng tuần với các chuyên gia dày dạn kinh nghiệm từ các công ty công nghệ hàng đầu.</p>
                         </div>
                         <div className={`${styles.featureCard} glass`}>
-                            <div className={styles.iconBox} style={{ background: '#ecfeff', color: '#0891b2' }}>🏅</div>
+
                             <h3>Chứng chỉ uy tín</h3>
                             <p>Nhận chứng chỉ được công nhận sau khi hoàn thành, cùng với việc đánh giá portfolio chuyên nghiệp.</p>
                         </div>
@@ -134,7 +125,7 @@ export default function SieuThucTapSinh() {
 
                     <div className={styles.timeline}>
                         <div className={`${styles.step} glass`}>
-                            <div className={styles.stepIcon}>📚</div>
+
                             <div className={styles.stepHeader}>
                                 <h3>Giai đoạn 1: Onboarding & Cơ bản</h3>
                                 <span className={styles.week}>Tuần 1-2</span>
@@ -143,7 +134,7 @@ export default function SieuThucTapSinh() {
                         </div>
 
                         <div className={`${styles.step} glass`}>
-                            <div className={styles.stepIcon}>🛠️</div>
+
                             <div className={styles.stepHeader}>
                                 <h3>Giai đoạn 2: Đi sâu kỹ năng</h3>
                                 <span className={styles.week}>Tuần 3-5</span>
@@ -152,7 +143,7 @@ export default function SieuThucTapSinh() {
                         </div>
 
                         <div className={`${styles.step} glass`}>
-                            <div className={styles.stepIcon}>🚀</div>
+
                             <div className={styles.stepHeader}>
                                 <h3>Giai đoạn 3: Dự án thực tế</h3>
                                 <span className={styles.week}>Tuần 6-11</span>
@@ -161,7 +152,7 @@ export default function SieuThucTapSinh() {
                         </div>
 
                         <div className={`${styles.step} glass`}>
-                            <div className={styles.stepIcon}>🎓</div>
+
                             <div className={styles.stepHeader}>
                                 <h3>Giai đoạn 4: Tốt nghiệp & Demo Day</h3>
                                 <span className={styles.week}>Tuần 12</span>

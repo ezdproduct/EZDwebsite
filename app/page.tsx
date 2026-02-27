@@ -1,7 +1,6 @@
-"use client";
-
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import ServiceAccordion from "@/components/ServiceAccordion";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -9,6 +8,7 @@ export default function Home() {
     <main className={styles.main}>
       <Navbar />
       <Hero />
+      <ServiceAccordion />
     </main>
   );
 }

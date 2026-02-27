@@ -1,42 +1,89 @@
+"use client";
+
 import Link from "next/link";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
     return (
         <section className={styles.hero}>
-            <div className={`${styles.content} fade-in`}>
+            <div className={styles.container}>
+                {/* Top Visual Section: Pixel Orb & Rings */}
+                <div className={`${styles.visualSection} fade-in`}>
+                    <div className={styles.bridgeDecoration}></div>
+                    <div className={styles.pixelRings}>
+                        {[...Array(3)].map((_, ringIdx) => (
+                            <div key={ringIdx} className={`${styles.ring} ${styles[`ring${ringIdx + 1}`]}`}>
+                                {[...Array(24)].map((_, dotIdx) => (
+                                    <div
+                                        key={dotIdx}
+                                        className={styles.dot}
+                                        style={{
+                                            ['--i' as any]: dotIdx,
+                                            animationDelay: `${ringIdx * 0.2 + dotIdx * 0.05}s`
+                                        } as React.CSSProperties}
+                                    ></div>
+                                ))}
+                            </div>
+                        ))}
+                    </div>
+
+                </div>
 
 
-                <h1 className={styles.title}>
-                    Nền tảng <br />
-                    <span className="text-gradient">nâng cấp năng lực</span> <br />
-                    và kết nối chuyên gia
-                </h1>
 
-                <p className={styles.description}>
-                    Khám phá tiềm năng vô hạn của bạn trong một cộng đồng tinh hoa,
-                    được thiết kế để kiến tạo sự phát triển bền vững và đột phá.
-                </p>
+                {/* Massive Heading */}
+                <div className={`${styles.mainContent} fade-in`} style={{ animationDelay: '0.8s' }}>
+                    <h1 className={styles.heroTitle}>
+                        KIẾN TẠO GIẢI PHÁP <br /> <span className="text-gradient">AI</span>
+                    </h1>
 
-                <div className={styles.buttons}>
-                    <Link href="/services" className="btn-primary">
-                        Khám phá ngay
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </Link>
-                    <button className="btn-secondary">
-                        <div className={styles.playIcon}>
-                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
-                                <path d="M8 5v14l11-7z" />
-                            </svg>
-                        </div>
-                        Tìm hiểu thêm
-                    </button>
+                    <p className={styles.heroSubtitle}>
+                        Giải pháp AI toàn diện cho doanh nghiệp: Tối ưu quy trình, <br /> nâng tầm hiệu suất và kiến tạo tương lai số.
+                    </p>
+
+                    <div className={styles.actionButtons}>
+                        <a
+                            href="#services"
+                            className="btn-primary"
+                            style={{ padding: '20px 48px', borderRadius: '100px', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none' }}
+                            onClick={(e) => {
+                                e.preventDefault();
+                                document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
+                            }}
+                        >
+                            Bắt đầu ngay
+                        </a>
+                        <Link href="/about" className="btn-secondary" style={{ padding: '20px 48px', borderRadius: '100px' }}>
+                            Tìm hiểu EZD
+                        </Link>
+                    </div>
                 </div>
             </div>
+
+            {/* Animated Light Streams */}
+            <div className={styles.lightStreamLeft}>
+                <div className={styles.beam}></div>
+                <div className={styles.beam}></div>
+                <div className={styles.beam}></div>
+            </div>
+            <div className={styles.lightStreamRight}>
+                <div className={styles.beam}></div>
+                <div className={styles.beam}></div>
+                <div className={styles.beam}></div>
+            </div>
+
+            {/* Galaxy Light Strip */}
+            <div className={styles.galaxyStripWrapper}>
+                <div className={styles.galaxyStrip}></div>
+                <div className={styles.galaxyCore}></div>
+            </div>
+
+            {/* Circuit Line Background Layer */}
+            <div className={styles.circuitBackgroundImg}></div>
+
+            {/* Background Accents */}
+            <div className={styles.blur1}></div>
+            <div className={styles.blur2}></div>
         </section>
     );
 }
-

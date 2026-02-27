@@ -1,21 +1,22 @@
 :root {
   --background: #ffffff;
-  --foreground: #010413;
+  --foreground: #0f172a;
   --primary: #2563eb;
   --primary-light: #60a5fa;
   --primary-dark: #1e40af;
-  --secondary: #64748b;
-  --accent: #2b7fff;
-  --glass-bg: rgba(255, 255, 255, 0.75);
-  --glass-border: rgba(255, 255, 255, 0.4);
+  --secondary: #475569;
+  --accent: #3b82f6;
+  --dark-bg: #030712;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
   --nav-height: 80px;
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 40px;
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
-  --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.05);
-  --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.1);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-xl: 48px;
+  --shadow-subtle: 0 4px 6px -1px rgba(0, 0, 0, 0.02);
+  --shadow-premium: 0 20px 25px -5px rgba(0, 0, 0, 0.03);
+  --shadow-glow: 0 0 30px rgba(37, 99, 235, 0.15);
 }
 
 * {
@@ -29,14 +30,98 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
-  background: linear-gradient(180deg, #eff6ff 0%, #ffffff 600px);
-  background-attachment: fixed;
+  background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-be-vietnam-pro), sans-serif;
+  font-family: var(--font-manrope), var(--font-inter), system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   line-height: 1.6;
+}
+
+/* Global Font Utility Classes */
+.font-manrope {
+  font-family: var(--font-manrope), sans-serif;
+}
+
+.font-inter {
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-be-vietnam {
+  font-family: var(--font-be-vietnam-pro), sans-serif;
+}
+
+.font-phudu {
+  font-family: var(--font-phudu), cursive;
+}
+
+.font-epilogue {
+  font-family: var(--font-epilogue), sans-serif;
+}
+
+.font-space {
+  font-family: var(--font-space-grotesk), monospace;
+}
+
+/* Section Backgrounds */
+.bg-dark-section {
+  background: radial-gradient(circle at top right, #1e293b 0%, #020617 100%);
+  color: white;
+}
+
+.bg-light-section {
+  background: #f8fafc;
+  color: var(--foreground);
+}
+
+/* Scanning Animation Effect */
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-light), transparent);
+  box-shadow: 0 0 15px var(--primary-light);
+  animation: scan 4s linear infinite;
+  z-index: 10;
+}
+
+@keyframes scan {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
+/* Floating Animation */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.floating {
+  animation: float 6s ease-in-out infinite;
 }
 
 h1,
@@ -45,30 +130,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-manrope), sans-serif;
-  line-height: 1.2;
-}
-
-.font-be-vietnam {
-  font-family: var(--font-be-vietnam-pro), sans-serif;
-}
-
-.font-manrope {
-  font-family: var(--font-manrope), sans-serif;
-}
-
-.font-epilogue {
-  font-family: var(--font-epilogue), sans-serif;
-}
-
-.font-phudu {
-  font-family: var(--font-phudu), sans-serif;
+  font-family: var(--font-inter), sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 button {
@@ -76,112 +146,86 @@ button {
   border: none;
   background: none;
   font-family: inherit;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 24px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .glass {
   background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--glass-border);
-  box-shadow: var(--shadow-md);
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: var(--primary);
   color: white;
   padding: 16px 32px;
-  border-radius: var(--radius-md);
+  border-radius: 100px;
   font-weight: 700;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
 }
 
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 15px 30px rgba(37, 99, 235, 0.3);
+  transform: translateY(-4px) scale(1.02);
+  background: #1d4ed8;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.3);
 }
 
 .btn-secondary {
   background: white;
   color: var(--foreground);
   padding: 16px 32px;
-  border-radius: var(--radius-md);
-  font-weight: 600;
+  border-radius: 100px;
+  font-weight: 700;
+  border: 1px solid #e2e8f0;
   display: flex;
   align-items: center;
-  gap: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  box-shadow: var(--shadow-sm);
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-secondary:hover {
-  background: #f9fafb;
-  transform: translateY(-2px);
-  border-color: var(--primary-light);
+  transform: translateY(-4px);
+  background: #f8fafc;
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #60a5fa 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  font-weight: 800;
 }
 
 .badge {
-  background: #eff6ff;
-  color: var(--primary);
-  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--primary-light);
+  padding: 8px 16px;
   border-radius: 100px;
   font-size: 13px;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 700;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid #dbeafe;
 }
 
 .badge-dot {
-  width: 8px;
-  height: 8px;
-  background: var(--primary);
+  width: 6px;
+  height: 6px;
+  background: var(--primary-light);
   border-radius: 50%;
   box-shadow: 0 0 10px var(--primary-light);
-  animation: pulse-glow 2s infinite;
-}
-
-@keyframes pulse-glow {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.5);
-    opacity: 0.5;
-  }
-
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
 }
 
 @keyframes fade-in {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(30px);
   }
 
   to {
@@ -191,15 +235,15 @@ button {
 }
 
 .fade-in {
-  animation: fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .section-padding {
-  padding: 100px 0;
+  padding: 120px 0;
 }
 
 @media (max-width: 768px) {
   .section-padding {
-    padding: 60px 0;
+    padding: 80px 0;
   }
 }
