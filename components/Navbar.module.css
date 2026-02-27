@@ -73,8 +73,8 @@
 .links>a:hover,
 .dropdownTrigger:hover {
     color: var(--primary);
-    background: white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    background: transparent;
+    box-shadow: none;
 }
 
 .links>a.active {

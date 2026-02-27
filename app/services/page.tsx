@@ -41,7 +41,6 @@ export default function ServicesPage() {
             <main className={`${styles.main} fade-in`}>
                 <header className={styles.header}>
                     <div className="badge">
-                        <span className="badge-dot"></span>
                         HỆ SINH THÁI EZD
                     </div>
                     <h1 className={styles.title}>
