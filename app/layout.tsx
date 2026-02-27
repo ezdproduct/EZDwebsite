@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Be_Vietnam_Pro, Phudu, Manrope, Epilogue, Space_Grotesk, Inter } from "next/font/google";
+import { Be_Vietnam_Pro, Phudu, Manrope, Epilogue, Space_Grotesk, Inter, Chakra_Petch, Exo_2 } from "next/font/google";
 import "./globals.css";
 import VietnameseOnlyPopup from "@/components/VietnameseOnlyPopup";
 
@@ -38,6 +38,18 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const chakraPetch = Chakra_Petch({
+  subsets: ["latin", "vietnamese"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-chakra-petch",
+});
+
+const exo2 = Exo_2({
+  subsets: ["latin", "vietnamese"],
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-exo-2",
+});
+
 export const metadata: Metadata = {
   title: "Ezd - Tương lai của sáng tạo",
   description: "Khám phá nền tảng sáng tạo thế hệ mới với Next.js và AI.",
@@ -53,7 +65,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0,0" />
       </head>
-      <body className={`${beVietnamPro.variable} ${phudu.variable} ${manrope.variable} ${epilogue.variable} ${spaceGrotesk.variable} ${inter.variable}`}>
+      <body className={`${beVietnamPro.variable} ${phudu.variable} ${manrope.variable} ${epilogue.variable} ${spaceGrotesk.variable} ${inter.variable} ${chakraPetch.variable} ${exo2.variable}`}>
         {children}
         {/* <VietnameseOnlyPopup /> */}
       </body>
